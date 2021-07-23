@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            height: 100px;
+            width: 100px;
+            border:1px solid red;
+            margin: 100px 500px;
+            margin-bottom: 0px;
+            perspective: 500px;
+        }
+        
+       
+        .c  {
+            font-size: 80px;
+            text-align: center;
+            color: black;
+            margin: auto;
+            height: 90px;
+            width: 90px;
+            border:1px solid blue;
+            transform: rotateX(0deg);
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="p">  
+        <div class="c">0</div>
+    </div>
+   
+    <script>
+        var i = 90;
+            // setInterval(function(){
+            //     if(i===-90){
+            //         i=90;
+            //         j++;
+            //     }
+            //     i= i-18;  
+            // document.querySelector(".c").style.transform = "rotateX("+i+"deg)";
+            // document.querySelector(".c").textContent = j;
+            // },100);
+            // var t =0
+            // setInterval(function(){
+            //     console.log(t)
+            //     t++;
+            // },1000)
+           
+                var j =0;
+                
+            // document.querySelector(".c").addEventListener("wheel",function() {
+            //     j++;
+            //     console.log("q")
+            //     document.querySelector(".c").textContent = j;
+            // });
+            document.querySelector(".c").addEventListener("wheel",function(evt) {
+                var ang=0;
+                function animator(){
+                    
+                    ang=ang-30;
+                    if(ang===-90){
+                        ang=90;
+                        document.querySelector(".c").textContent = j;
+                    }
+                    document.querySelector(".c").style.transform = "rotateX("+ang+"deg)";
+                    if(ang===0){
+                        clearInterval(temp);
+                    }
+                }
+                function reverseanimator(){
+                    
+                    ang=ang+30;
+                    if(ang===90){
+                        ang=-90;
+                        document.querySelector(".c").textContent = j;
+                    }
+                    document.querySelector(".c").style.transform = "rotateX("+ang+"deg)";
+                    if(ang===0){
+                        clearInterval(temp);
+                    }
+                }
+                
+                console.log("p");
+                if(evt.deltaY>0){
+                    j++;
+                    var temp = setInterval(animator,100)
+                }
+                else{
+                    j--;
+                    var temp = setInterval(reverseanimator,100)
+                }
+                if(j==60){
+                    j=0;
+                }
+                if(j<0){
+                    j=59;
+                }
+                
+            });
+
+    </script>
+</body>
+</html>

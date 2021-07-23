@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/Timer/static/js/main.ccf88f8e.chunk.js",
+    "main.js.map": "/Timer/static/js/main.ccf88f8e.chunk.js.map",
+    "runtime-main.js": "/Timer/static/js/runtime-main.63a15c94.js",
+    "runtime-main.js.map": "/Timer/static/js/runtime-main.63a15c94.js.map",
+    "static/js/2.632fb447.chunk.js": "/Timer/static/js/2.632fb447.chunk.js",
+    "static/js/2.632fb447.chunk.js.map": "/Timer/static/js/2.632fb447.chunk.js.map",
+    "static/js/3.e6e8a176.chunk.js": "/Timer/static/js/3.e6e8a176.chunk.js",
+    "static/js/3.e6e8a176.chunk.js.map": "/Timer/static/js/3.e6e8a176.chunk.js.map",
+    "index.html": "/Timer/index.html",
+    "static/js/2.632fb447.chunk.js.LICENSE.txt": "/Timer/static/js/2.632fb447.chunk.js.LICENSE.txt",
+    "static/js/3.e6e8a176.chunk.js.LICENSE.txt": "/Timer/static/js/3.e6e8a176.chunk.js.LICENSE.txt",
+    "static/media/s.24b60537.mp3": "/Timer/static/media/s.24b60537.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.63a15c94.js",
+    "static/js/2.632fb447.chunk.js",
+    "static/js/main.ccf88f8e.chunk.js"
+  ]
+}

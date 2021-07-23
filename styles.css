@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    
+    background-color: black;
+}
+
+body{
+    background-color: black;
+    color: white;
+ 
+}
+.Time{
+    margin-top: 3vh;
+    font-size: 10vh;
+    text-align: center;
+    
+}
+.TimeMinimum{
+    margin-top: 3vh;
+    font-size: 2vh;
+    text-align: center;
+}
+h1{
+    /* border: 1px solid white ; */
+
+    display: inline-block;
+    padding: 20px;
+    border-radius: 6vh;
+    box-shadow: 0 4px 10px 0px rgb(238, 125, 125), 0 6px 20px 0 rgba(219, 235, 77, 0.986);
+}
+.timer{
+  font-size: 5vh;
+  margin-top: 5vh;
+    
+}
+.AddTimer{
+    margin-top: 1vh;
+    border: none;
+    border-radius: 100%;
+   
+
+}
+.AddTimer:hover{
+    box-shadow: 0 4px 10px 0px rgb(238, 125, 125), 0 6px 20px 0 rgba(219, 235, 77, 0.986);
+}
+
+@keyframes timeranime{
+    from {font-size: 5px;}
+    to{font-size: 5vh;}
+}
+
+.hoverdisplay{
+    margin-top: 10vh;
+    animation-name: timeranime;
+    animation-duration: 1s;
+}
+.displaynone{
+    display: none;
+   
+}
+.countdown{
+    width: 72vw;
+    height: 60vh;
+    /* border: 1px solid white; */
+}
+
+
+/* for count cards */
+.p{
+    height: 40vh;
+    width: 24vw;
+    /* border:1px solid red; */
+    perspective: 2000px;
+}
+.c  {
+    display: flex;
+    font-size: 30vh;
+    justify-content: center;
+    height: 38vh;
+    width: 22vw;
+    color: black;
+    margin: auto;
+    margin-top: 1vh;
+    background-color: white;
+    /* border:1px solid blue; */
+    transform: rotateX(0deg);
+    border-radius: 2vh;
+
+}
